@@ -27,7 +27,7 @@
     <table>
         <caption>Skills that I have</caption>
         <colgroup>
-            <col span="1">
+            <col span="2">
         </colgroup>
         <tr>
             <th>Skills</th>
@@ -48,26 +48,26 @@
             <legend>Contact Form</legend>
             <label for="name">Email:</label><br>
             <input type="text" id="email" name="email" value="JD@gmail.com"><br>
-            <label for="FirstName">Name:</label><br>
+            <label>Name:</label><br>
             <input type="text" id="name" name="name" value="Victor"><br><br>
             <input type="submit" value="Submit">
         </fieldset>
     </form>
     <form>
-        <label>Choose Contact</label>
+        
         <select>
             <optgroup>
+                <label>Choose Contact</label>
                 <option>Email</option>
                 <option>Phone</option>
             </optgroup>
-            <textarea id="text" rows="4">
+        </select>
+        <textarea id="text" rows="4">
             Message
         </textarea>
-
-        </select>
     </form>
     <label for="emails">Choose email</label>
-    <input list="emails" name="emails" id="emails">
+    <input list="emails" name="emails">
     <datalist id="emails">
         <option value="gmail.com">
         <option value="yahoo.com">
