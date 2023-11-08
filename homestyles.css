@@ -22,7 +22,7 @@
 
 .links{
     grid-area: sidebar;
-    background-color: #8ca0ff;
+
 }
 
 #About_Me{
@@ -41,6 +41,9 @@
       "sidebar"  
       "content"
       "footer";
+    }
+    .links{
+    background-color: #8ca0ff;;
     }
 
 
