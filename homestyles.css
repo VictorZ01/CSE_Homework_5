@@ -25,15 +25,16 @@
      "footer"
   }
   
-  @media only screen and (max-width: 480px) {
-    #page {
+  @media only screen and (min-width: 500px) {
+    .wrapper {
       display: grid;
       grid-gap: 20px;
       grid-template-areas:
-        "header"
-        "sidebar"
-        "picture"
-        "content";
+      "header   header"
+      "picture  picture"
+      "sidebar  content"
+      "sidebar2 sidebar2"
+      "footer   footer";
     }
     .topnav {
         display:hidden;
@@ -43,7 +44,7 @@
     }
   }
   
-  @media only screen and (max-width: 750px)   {
+  @media only screen and (min-width: 750px)   {
     .wrapper {
       grid-gap: 20px;
       grid-template-columns: 120px auto 120px;
