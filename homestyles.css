@@ -63,9 +63,9 @@ li{
   .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "top top"
-    "picture picture"
-    "content content"
+    "top ."
+    ". picture"
+    "sidebar1 content"
     "sidebar2 sidebar2";
   }
   #about-me{
