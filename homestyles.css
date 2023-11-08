@@ -42,7 +42,7 @@
         "footer footer";
     }
     .topnav {
-      display: flex; 
+      display: flex;
       background-color: #333;
     }
     .links {
@@ -56,10 +56,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "top top "
+        "top top"
         "content sidebar"
         "footer footer";
       max-width: 600px;
+    }
+    .topnav {
+      display: flex;
     }
     .links {
       background-color: orange;
@@ -72,7 +75,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
-         "top top"
+        "top top"
         "picture content"
         "sidebar content"
         "footer footer";
