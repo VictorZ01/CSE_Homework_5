@@ -36,6 +36,8 @@ body{
 } 
 #links{
   grid-area:sidebar2;
+}
+li{
   list-style:none;
   text-decoration:none;
 }
