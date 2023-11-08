@@ -33,6 +33,7 @@
   @media only screen and (max-width: 480px) {
     #page {
       display: grid;
+      grid-gap: 20px;
       grid-template-areas:
         
         "sidebar"
@@ -47,14 +48,14 @@
     }
   }
   
-  @media only screen and (max-width: 600px)   {
+  @media only screen and (max-width: 750px)   {
     .wrapper {
       grid-gap: 20px;
       grid-template-columns: 120px auto 120px;
       grid-template-areas:
-      "header  header  header"
-      "sidebar content sidebar2"
-      "footer  footer  footer";
+      "header  header  "
+      "picture content "
+      "sidebar sidebar  ";
       max-width: 600px;
     }
   }
