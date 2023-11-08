@@ -1,7 +1,7 @@
 .topnav {
-    display: flex;
     justify-content: center; /* Center align text in the navbar */
     background-color: #333;
+    grid-area: top;
   }
   
   .topnav a {
@@ -37,6 +37,7 @@
       display: grid;
       grid-template-columns: 20% auto;
       grid-template-areas:
+        "top"
         "sidebar"
         "content"
         "footer footer";
@@ -52,6 +53,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
+        "top top "
         "content sidebar"
         "footer footer";
       max-width: 600px;
@@ -67,6 +69,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
+         "top top"
         "picture content"
         "sidebar content"
         "footer footer";
