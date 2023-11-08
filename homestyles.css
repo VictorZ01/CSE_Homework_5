@@ -62,7 +62,7 @@ li{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "top top"
-    "picture sidebar1"
+    "picture picture"
     "content content"
     "sidebar2 sidebar2";
   }
