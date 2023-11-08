@@ -32,7 +32,7 @@
 }
 
   @media only screen and (min-width: 480px)  {
-    .body{
+    #page{
   
       grid-template-columns: 20% auto;
       grid-template-areas:
@@ -46,7 +46,7 @@
     }
   
     @media only screen and (min-width: 768px)   {
-      .body {
+        #page {
         grid-gap: 20px;
         grid-template-columns: 120px auto 120px;
         grid-template-areas:
@@ -57,7 +57,7 @@
     }
 
     @media only screen and (min-width: 1200px)   {
-        .body {
+        #page {
           grid-gap: 20px;
           grid-template-columns: 120px auto 120px;
           grid-template-areas:
