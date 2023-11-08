@@ -38,10 +38,9 @@
   
       grid-template-columns: 20% auto;
       grid-template-areas:
-      "header   header"
-      "sidebar  content"
-      "sidebar2 sidebar2"
-      "footer   footer";
+      "sidebar"  
+      "content"
+      "footer";
     }
 
 
