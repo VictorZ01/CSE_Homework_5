@@ -19,3 +19,13 @@
 .topnav a.active{
     background-color: rgb(99, 124, 206);
 }
+
+.body {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content"
+     "footer"
+  }
