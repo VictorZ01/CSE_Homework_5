@@ -20,7 +20,15 @@
     background-color: rgb(99, 124, 206);
 }
 
-.body {
+.links{
+    grid-area: sidebar;
+}
+
+.class{
+    grid-area:content;
+}
+
+body {
     display: grid;
     grid-gap: 1em;
     grid-template-areas:
@@ -30,7 +38,8 @@
      "footer"
   }
 
-  @media only screen and (min-width: 500px)  {
+
+  @media only screen and (min-width: 480px)  {
     .body{
   
       grid-template-columns: 20% auto;
@@ -40,9 +49,11 @@
       "sidebar2 sidebar2"
       "footer   footer";
     }
+
+
     }
   
-    @media only screen and (min-width: 600px)   {
+    @media only screen and (min-width: 768px)   {
       .body {
         grid-gap: 20px;
         grid-template-columns: 120px auto 120px;
@@ -53,3 +64,15 @@
         max-width: 600px;
       }
     }
+
+    @media only screen and (min-width: 1200px)   {
+        .body {
+          grid-gap: 20px;
+          grid-template-columns: 120px auto 120px;
+          grid-template-areas:
+          "header  header  header"
+          "sidebar content sidebar2"
+          "footer  footer  footer";
+          max-width: 600px;
+        }
+      }
