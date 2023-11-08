@@ -1,89 +1,101 @@
-.topnav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 1vw 0;
-    grid-area: top; /* Added grid area */
+:root {
+    --primary-font: 'Arial', sans-serif; /* Default font */
+    --primary-color: #333; /* Default color */
   }
   
+  /* Custom Fonts with fallback */
+  body {
+    font-family: var(--primary-font), sans-serif;
+  }
+  
+  /* Relative units (em and rem) */
+  h1 {
+    font-size: 2.5rem; /* Relative font size */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Relative font size */
+  }
+  
+  /* Dynamic viewport units (vw, vh) */
+  footer {
+    font-size: 1.5vw; /* Responsive font size */
+  }
+  
+  /* CSS Transitions and Transforms */
   .topnav a {
-    color: white;
-    font-size: 2vw;
-    text-decoration: none;
-    padding: 1vw;
+    transition: background-color 0.3s; /* Smooth transition on hover */
   }
   
   .topnav a:hover {
     background-color: #72CFD6;
+    transform: scale(1.05); /* Scale on hover */
   }
   
-  .topnav a.active {
-    background-color: rgb(99, 124, 206);
-  }
-  
-  .links {
-    grid-area: sidebar; /* Added grid area */
-  }
-  
-  #About_Me {
-    grid-area: content; /* Added grid area */
-    background-color: #ffa08c;
-  }
-  
-  #Me {
-    grid-area: picture; /* Added grid area */
-  }
-  
-  #page {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas:
-      "top"
-      "sidebar"
-      "content"
-      "footer";
-    max-width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-  }
-  
-  /* Media queries for responsive layout */
-  
-  @media only screen and (min-width: 480px) {
-    #page {
-      grid-template-areas:
-        "top"
-        "sidebar"
-        "content"
-        "footer";
+  /* Media Queries for responsiveness */
+  @media screen and (min-width: 768px) {
+    /* Adjustments for screens wider than 768px */
+    .topnav {
+      justify-content: flex-end; /* Move navigation to the right */
     }
-    .links {
-      background-color: #8ca0ff;
-    }
-  }
   
-  @media only screen and (min-width: 768px) {
     #page {
-      grid-template-areas:
-        "top"
-        "sidebar"
-        "content"
-        "footer";
+      display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "Me About_Me"
+        "sidebar content"
+        "sidebar content"
+        "footer footer";
     }
+  
     .links {
       background-color: orange;
     }
+  
+    /* Define grid areas for sidebar and content */
+    #sidebar {
+      grid-area: sidebar;
+    }
+  
+    #content {
+      grid-area: content;
+    }
   }
   
-  @media only screen and (min-width: 1200px) {
-    #page {
-      grid-template-areas:
-        "top"
-        "picture content"
-        "sidebar content"
-        "footer";
-      grid-template-columns: 1fr 1fr;
+  /* New selectors like :has (for demonstration) */
+  /* Note: The :has() selector is not widely supported in current browsers, and this is just for demonstration. */
+  /* You can use other more widely supported selectors for production use. */
+  :has(.where) {
+    background-color: #F5A623;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  /* Extra Credit: Nested and Scoped CSS (for demonstration) */
+  /* Nested and scoped CSS is not widely supported and is included for demonstration. */
+  #About_Me {
+    & p {
+      color: #333;
     }
+  }
+  
+  /* Additional Styles */
+  .topnav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1vw 0;
+  }
+  
+  h1 {
+    color: blue;
+  }
+  
+  /* Use of wider gamut color */
+  /* The color() and color-mix() functions are not widely supported and are included for demonstration. */
+  h2 {
+    color: color(#FF5733 lightness(50%)); /* Wider gamut color with CSS4 color() function */
+    background-color: color-mix(#FF5733 #333 20%); /* CSS4 color-mix() function */
   }
