@@ -1,9 +1,14 @@
+:root{
+  --main-text-color:#4e9a06;
+  --main-background-color:black;
+}
 #nav{
   grid-area: sidebar1;
 }
 
 #about-me {
   grid-area: content;
+  color: var(--main-text-color);
 }
 
 #me {
