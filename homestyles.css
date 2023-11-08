@@ -27,7 +27,7 @@
      "sidebar2"
   }
   
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 750px) {
     .wrapper {
       grid-template-columns: 20% auto;
       grid-template-areas:
@@ -38,14 +38,15 @@
     }
   }
   
-  @media only screen and (min-width: 750px)   {
+  @media only screen and (min-width: 1200px)   {
     .wrapper {
       grid-gap: 20px;
       grid-template-columns: 120px auto 120px;
       grid-template-areas:
-      "header  header  "
-      "picture content "
-      "sidebar sidebar  ";
+      "header  header  header"
+      "picture picture picture "
+      "sidebar1 content content  "
+      "sidebar2 content content  ";
       max-width: 600px;
     }
   }
