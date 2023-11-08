@@ -9,6 +9,7 @@
     font-size: 2vw;
     text-decoration: none;
     padding: 1vw;
+    float:left;
   }
   
   .topnav a:hover {
