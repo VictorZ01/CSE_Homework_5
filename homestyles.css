@@ -1,7 +1,6 @@
 .topnav {
-    justify-content: center; /* Center align text in the navbar */
     background-color: #333;
-    grid-area: top;
+    grid-area:top;
   }
   
   .topnav a {
@@ -42,7 +41,6 @@
         "footer footer";
     }
     .topnav {
-      display: flex;
       background-color: #333;
     }
     .links {
