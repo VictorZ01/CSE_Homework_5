@@ -57,9 +57,9 @@ body{
   .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "top   top"
-    "picture  sidebar2"
-    " content content"
+    "top top"
+    "picture sidebar1"
+    "content content"
     "sidebar2 sidebar2";
   }
   #me {
