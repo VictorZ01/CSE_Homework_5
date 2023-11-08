@@ -1,15 +1,16 @@
 .topnav{
     display:flex;
     text-align: center;
-    background-color: #72CFD6;
+    background-color: #333;
 }
 
 .topnav a{
     float:left;
     color:white;
-    font-size: 2vw
+    font-size: 2vw;
+    text-decoration: none;
 }
 
 .topnav a:hover{
-    background-color: aliceblue;
+    background-color: #72CFD6;
 }
