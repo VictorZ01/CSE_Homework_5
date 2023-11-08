@@ -22,7 +22,6 @@
      "sidebar1"
      "content"
      "sidebar2"
-     "footer"
   }
   
   @media only screen and (min-width: 500px) {
@@ -33,8 +32,9 @@
       grid-template-areas:
       "header   header"
       "picture  picture"
-      "sidebar  content"
-      "sidebar2 sidebar2"
+      "content  content"
+      "content  content"
+      "sidebar2  sidebar1"
       "footer   footer";
     }
     .topnav {
