@@ -1,6 +1,8 @@
 .topnav {
+    display: flex;
+    justify-content: center;
     background-color: #333;
-    grid-area:top;
+    padding: 1vw 0;
   }
   
   .topnav a {
@@ -18,30 +20,29 @@
     background-color: rgb(99, 124, 206);
   }
   
-  .links {
-    grid-area: sidebar;
+  #page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "top"
+      "sidebar"
+      "content"
+      "footer";
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
   }
   
-  #About_Me {
-    grid-area: content;
-    background-color: #ffa08c;
-  }
-  
-  #Me {
-    grid-area: picture;
-  }
+  /* Media queries for responsive layout */
   
   @media only screen and (min-width: 480px) {
     #page {
-      display: grid;
       grid-template-areas:
         "top"
         "sidebar"
         "content"
-        "footer footer";
-    }
-    .topnav {
-      background-color: #333;
+        "footer";
     }
     .links {
       background-color: #8ca0ff;
@@ -50,17 +51,11 @@
   
   @media only screen and (min-width: 768px) {
     #page {
-      grid-gap: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "top top"
+        "top"
         "content sidebar"
         "footer footer";
-      max-width: 600px;
-    }
-    .topnav {
-      display: flex;
+      grid-template-columns: 1fr 1fr;
     }
     .links {
       background-color: orange;
@@ -69,14 +64,11 @@
   
   @media only screen and (min-width: 1200px) {
     #page {
-      grid-gap: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "top top"
+        "top"
         "picture content"
         "sidebar content"
         "footer footer";
-      max-width: 600px;
+      grid-template-columns: 1fr 1fr;
     }
   }
