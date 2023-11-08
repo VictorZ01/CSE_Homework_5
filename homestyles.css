@@ -1,76 +1,74 @@
-.topnav{
-    display:flex;
-    text-align: center;
+.topnav {
+    display: flex;
+    justify-content: center; /* Center align text in the navbar */
     background-color: #333;
-}
-
-.topnav a{
-    float:left;
-    color:white;
+  }
+  
+  .topnav a {
+    color: white;
     font-size: 2vw;
     text-decoration: none;
     padding: 1vw;
-}
-
-.topnav a:hover{
-    background-color: #72CFD6;
-}
-
-.topnav a.active{
-    background-color: rgb(99, 124, 206);
-}
-
-.links{
-    grid-area: sidebar;
-
-}
-
-#About_Me{
-    grid-area:content;
-    background-color: #ffa08c;
-}
-#Me{
-    grid-area:picture;
-}
-
-  @media only screen and (min-width: 480px)  {
-    #page{
+  }
   
+  .topnav a:hover {
+    background-color: #72CFD6;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(99, 124, 206);
+  }
+  
+  .links {
+    grid-area: sidebar;
+  }
+  
+  #About_Me {
+    grid-area: content;
+    background-color: #ffa08c;
+  }
+  
+  #Me {
+    grid-area: picture;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    #page {
+      display: grid;
       grid-template-columns: 20% auto;
       grid-template-areas:
-      "sidebar"  
-      "content"
-      "footer";
+        "sidebar content"
+        "footer footer";
     }
-    .links{
-    background-color: #8ca0ff;;
+    .links {
+      background-color: #8ca0ff;
     }
-
-
-    }
+  }
   
-    @media only screen and (min-width: 768px)   {
-        #page {
-        grid-gap: 20px;
-        grid-template-columns: 40%;
-        grid-template-areas:
+  @media only screen and (min-width: 768px) {
+    #page {
+      grid-gap: 20px;
+      display: grid;
+      grid-template-columns: 40% auto;
+      grid-template-areas:
         "content sidebar"
-        "footer  footer";
-        max-width: 600px;
-      }
-      .links{
-        background-color: orange;
-        }
+        "footer footer";
+      max-width: 600px;
     }
-
-    @media only screen and (min-width: 1200px)   {
-        #page {
-          grid-gap: 20px;
-          grid-template-columns: 100%;
-          grid-template-areas:
-          "picture content"
-          "sidebar content"
-          "footer  footer";
-          max-width: 600px;
-        }
-      }
+    .links {
+      background-color: orange;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    #page {
+      grid-gap: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "picture content"
+        "sidebar content"
+        "footer footer";
+      max-width: 600px;
+    }
+  }
