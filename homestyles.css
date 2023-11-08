@@ -58,9 +58,9 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header   header"
-    "picture  picture"
-    "sidebar1 content"
-    "sidebar2 content";
+    "picture  sidebar2"
+    " content content"
+    "sidebar2 sidebar2";
   }
   #me {
   grid-area: picture;
