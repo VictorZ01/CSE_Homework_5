@@ -51,7 +51,7 @@
         grid-gap: 20px;
         grid-template-columns: 40%;
         grid-template-areas:
-        "sidebar content"
+        "content sidebar"
         "footer  footer";
         max-width: 600px;
       }
