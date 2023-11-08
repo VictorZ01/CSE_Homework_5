@@ -1,5 +1,4 @@
 .topnav {
-    grid-area: top;
     display: flex;
     justify-content: center; /* Center align text in the navbar */
     background-color: #333;
