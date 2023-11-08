@@ -11,6 +11,9 @@
   }
   #head{
     grid-area: header;
+  } 
+  #links{
+    grid-area:sidebar2;
   }
 
   .wrapper {
@@ -31,10 +34,10 @@
       grid-gap: 20px;
       grid-template-areas:
       "header   header"
-      "picture  picture"
+      "picture  sidebar1"
       "content  content"
       "content  content"
-      "sidebar2  sidebar1"
+      "sidebar2  sidebar2"
       "footer   footer";
     }
     .topnav {
