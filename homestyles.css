@@ -6,6 +6,10 @@
   grid-area: sidebar1;
 }
 
+body{
+  background-color: var(--main-background-color,white);
+}
+
 #about-me {
   grid-area: content;
   color: var(--main-text-color,white);
