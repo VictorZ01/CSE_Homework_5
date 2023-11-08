@@ -34,17 +34,8 @@
       grid-gap: 20px;
       grid-template-areas:
       "header   header"
-      "picture  sidebar1"
-      "content  content"
-      "content  content"
-      "sidebar2  sidebar2"
-      "footer   footer";
-    }
-    .topnav {
-        display:hidden;
-    }
-    .links {
-      background-color: #8ca0ff;
+      "sidebar1 content"
+      "sidebar2 sidebar2";
     }
   }
   
