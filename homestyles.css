@@ -24,8 +24,11 @@
     grid-area: sidebar;
 }
 
-.content{
+#About_Me{
     grid-area:content;
+}
+#Me{
+    grid-area:picture;
 }
 
   @media only screen and (min-width: 480px)  {
@@ -47,9 +50,8 @@
         grid-gap: 20px;
         grid-template-columns: 120px auto 120px;
         grid-template-areas:
-        "header  header  header"
-        "sidebar content sidebar2"
-        "footer  footer  footer";
+        "sidebar content"
+        "footer  footer";
         max-width: 600px;
       }
     }
@@ -59,6 +61,7 @@
           grid-gap: 20px;
           grid-template-columns: 120px auto 120px;
           grid-template-areas:
+          "picture content"
           "sidebar content"
           "footer  footer";
           max-width: 600px;
