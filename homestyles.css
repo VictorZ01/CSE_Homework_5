@@ -1,33 +1,6 @@
-:root {
-    --primary-font: 'Arial', sans-serif;
-    --primary-color: #333;
-  }
-  
-  /* Apply the primary font with a fallback */
-  body {
-    font-family: var(--primary-font), sans-serif;
-  }
-  
-  /* Define font sizes using relative units */
-  h1 {
-    font-size: 2.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  /* Adjust footer font size using dynamic viewport units (vw) */
-  footer {
-    font-size: 1.5vw;
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-    padding: 1vw 0;
+.topnav {
+    background-color: #333;
+    grid-area:top;
   }
   
   .topnav a {
@@ -35,76 +8,55 @@
     font-size: 2vw;
     text-decoration: none;
     padding: 1vw;
-    transition: background-color 0.3s;
   }
   
   .topnav a:hover {
     background-color: #72CFD6;
-    transform: scale(1.05);
   }
   
-  /* Media Queries for responsiveness */
-  @media screen and (min-width: 768px) {
-    .topnav {
-      justify-content: space-between;
-    }
+  .topnav a.active {
+    background-color: rgb(99, 124, 206);
+  }
   
+  .links {
+    grid-area: sidebar;
+  }
+  
+  #About_Me {
+    grid-area: content;
+  }
+  
+  #Me {
+    grid-area: picture;
+  }
+  
+  @media only screen and (max-width: 480px) {
     #page {
       display: grid;
-      grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "Me About_Me"
-        "sidebar content"
-        "sidebar content"
-        "footer footer";
+        
+        "sidebar"
+        "picture"
+        "content";
     }
-  
-    #sidebar {
-      grid-area: sidebar;
+    .topnav {
+        display:hidden;
     }
-  
-    #content {
-      grid-area: content;
+    .links {
+      background-color: #8ca0ff;
     }
   }
   
-  /* Additional styles */
-  h1 {
-    color: blue;
+  @media only screen and (max-width: 600px)   {
+    .wrapper {
+      grid-gap: 20px;
+      grid-template-columns: 120px auto 120px;
+      grid-template-areas:
+      "header  header  header"
+      "sidebar content sidebar2"
+      "footer  footer  footer";
+      max-width: 600px;
+    }
   }
   
-  h2 {
-    color: #333; /* Adjusted text color for h2 */
-    background-color: #F5A623; /* Background color for h2 */
-    padding: 0.5rem;
-    border-radius: 5px;
-    display: inline-block;
-  }
-  
-  /* Footer styling */
-  footer {
-    border-top: 1px solid #333;
-    padding: 1rem;
-  }
-  
-  /* Links in the sidebar */
-  #links ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #links li {
-    margin: 0.5rem 0;
-  }
-  
-  /* The sidebar content in About_Me section */
-  #About_Me aside {
-    background-color: #F5A623;
-    padding: 1rem;
-    border-radius: 5px;
-  }
-  
-  /* Some CSS3 transforms */
-  #Me img {
-    transform: rotate(15deg);
-  }
+ 
