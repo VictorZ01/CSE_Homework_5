@@ -37,6 +37,7 @@ body{
 #links{
   grid-area:sidebar2;
   list-style:none;
+  text-decoration:none;
 }
 
 .wrapper {
