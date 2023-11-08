@@ -1,5 +1,6 @@
 .topnav {
-    grid-area:top;
+    grid-area: top;
+    display: flex;
     justify-content: center; /* Center align text in the navbar */
     background-color: #333;
   }
@@ -9,7 +10,6 @@
     font-size: 2vw;
     text-decoration: none;
     padding: 1vw;
-    float:left;
   }
   
   .topnav a:hover {
@@ -38,7 +38,6 @@
       display: grid;
       grid-template-columns: 20% auto;
       grid-template-areas:
-         "top"
         "sidebar"
         "content"
         "footer footer";
@@ -52,9 +51,8 @@
     #page {
       grid-gap: 20px;
       display: grid;
-      grid-template-columns: 1 fr 1 fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
-         "top top"
         "content sidebar"
         "footer footer";
       max-width: 600px;
@@ -70,7 +68,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "top top"
         "picture content"
         "sidebar content"
         "footer footer";
