@@ -1,3 +1,7 @@
-.topnav a:hover{
+.topnav{
     background-color:black;
+}
+.topnav a{
+    color: white;
+    font-size: 5vw;
 }
