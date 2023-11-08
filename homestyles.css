@@ -31,6 +31,8 @@ body{
 }
 #head{
   grid-area: header;
+  font-size: 3rem;
+  color: cadetblue;
 } 
 #links{
   grid-area:sidebar2;
