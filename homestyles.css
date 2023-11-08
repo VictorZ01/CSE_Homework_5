@@ -52,7 +52,7 @@
     #page {
       grid-gap: 20px;
       display: grid;
-      grid-template-columns: 40% auto;
+      grid-template-columns: 1 fr 1 fr;
       grid-template-areas:
          "top top"
         "content sidebar"
@@ -70,6 +70,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
+        "top top"
         "picture content"
         "sidebar content"
         "footer footer";
