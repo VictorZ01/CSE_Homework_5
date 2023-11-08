@@ -1,42 +1,52 @@
 :root {
-    --primary-font: 'Arial', sans-serif; /* Default font */
-    --primary-color: #333; /* Default color */
+    --primary-font: 'Arial', sans-serif;
+    --primary-color: #333;
   }
   
-  /* Custom Fonts with fallback */
+  /* Apply the primary font with a fallback */
   body {
     font-family: var(--primary-font), sans-serif;
   }
   
-  /* Relative units (em and rem) */
+  /* Define font sizes using relative units */
   h1 {
-    font-size: 2.5rem; /* Relative font size */
+    font-size: 2.5rem;
   }
   
   h2 {
-    font-size: 2rem; /* Relative font size */
+    font-size: 2rem;
   }
   
-  /* Dynamic viewport units (vw, vh) */
+  /* Adjust footer font size using dynamic viewport units (vw) */
   footer {
-    font-size: 1.5vw; /* Responsive font size */
+    font-size: 1.5vw;
   }
   
-  /* CSS Transitions and Transforms */
+  /* Style the top navigation bar */
+  .topnav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1vw 0;
+  }
+  
   .topnav a {
-    transition: background-color 0.3s; /* Smooth transition on hover */
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 1vw;
+    transition: background-color 0.3s;
   }
   
   .topnav a:hover {
     background-color: #72CFD6;
-    transform: scale(1.05); /* Scale on hover */
+    transform: scale(1.05);
   }
   
   /* Media Queries for responsiveness */
   @media screen and (min-width: 768px) {
-    /* Adjustments for screens wider than 768px */
     .topnav {
-      justify-content: flex-end; /* Move navigation to the right */
+      justify-content: space-between;
     }
   
     #page {
@@ -49,11 +59,6 @@
         "footer footer";
     }
   
-    .links {
-      background-color: orange;
-    }
-  
-    /* Define grid areas for sidebar and content */
     #sidebar {
       grid-area: sidebar;
     }
@@ -63,39 +68,43 @@
     }
   }
   
-  /* New selectors like :has (for demonstration) */
-  /* Note: The :has() selector is not widely supported in current browsers, and this is just for demonstration. */
-  /* You can use other more widely supported selectors for production use. */
-  :has(.where) {
-    background-color: #F5A623;
+  /* Additional styles */
+  h1 {
+    color: blue;
+  }
+  
+  h2 {
+    color: #333; /* Adjusted text color for h2 */
+    background-color: #F5A623; /* Background color for h2 */
     padding: 0.5rem;
     border-radius: 5px;
     display: inline-block;
   }
   
-  /* Extra Credit: Nested and Scoped CSS (for demonstration) */
-  /* Nested and scoped CSS is not widely supported and is included for demonstration. */
-  #About_Me {
-    & p {
-      color: #333;
-    }
+  /* Footer styling */
+  footer {
+    border-top: 1px solid #333;
+    padding: 1rem;
   }
   
-  /* Additional Styles */
-  .topnav {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-    padding: 1vw 0;
+  /* Links in the sidebar */
+  #links ul {
+    list-style-type: none;
+    padding: 0;
   }
   
-  h1 {
-    color: blue;
+  #links li {
+    margin: 0.5rem 0;
   }
   
-  /* Use of wider gamut color */
-  /* The color() and color-mix() functions are not widely supported and are included for demonstration. */
-  h2 {
-    color: color(#FF5733 lightness(50%)); /* Wider gamut color with CSS4 color() function */
-    background-color: color-mix(#FF5733 #333 20%); /* CSS4 color-mix() function */
+  /* The sidebar content in About_Me section */
+  #About_Me aside {
+    background-color: #F5A623;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Some CSS3 transforms */
+  #Me img {
+    transform: rotate(15deg);
   }
