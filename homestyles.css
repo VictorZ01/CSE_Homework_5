@@ -1,76 +1,46 @@
-:root {
-    --main-color: blue;
-}
-
-/* Custom Fonts with Fallback */
 body {
-    font-family: "Arial", sans-serif;
-}
-
-/* Relative Units */
-h1 {
-    font-size: 2em;
-}
-
-/* Dynamic Viewport Units */
-body {
-    font-size: 1.5vmin;
-    margin: 2vmax;
-}
-
-/* CSS Animations and Transitions */
-h1 {
-    color: var(--main-color);
-    transition: color 0.5s;
-}
-
-h1:hover {
-    color: red; /* Change the color on hover */
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
-
-/* CSS Grid Layout */
-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Adjust the column widths as needed */
-    grid-gap: 20px;
-}
-
-#About_Me {
-    grid-column: 2 / span 1; /* Adjust the column span for the About Me section */
-}
-
-#links {
-    grid-column: 1 / span 1;
-}
-
-/* Media Queries for Responsive Design */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px; /* Adjust font size for smaller screens */
+    margin: 40px;
+  }
+  
+  .sidebar {
+      grid-area: sidebar;
     }
-
-    h1 {
-        font-size: 1.5em; /* Adjust h1 font size for smaller screens */
+  
+    .content {
+      grid-area: content;
     }
-
-    main {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  
+    .header {
+      grid-area: header;
     }
-}
-
-/* Wider Gamut Colors with color() and color-mix() */
-body {
-    background-color: color(blue s(50%)); /* Set a color using the color() function with saturation */
-    color: color(white blend(blue 40%)); /* Mix colors using the color-mix() function */
-}
-
-/* New Selectors (for demonstration) */
-li:has(a[href*="experience.html"]) {
-    background-color: lightgray;
-}
-
-li:has(a[href*="experiment.html"]) {
-    background-color: lightblue;
-}
+  
+    .footer {
+      grid-area: footer;
+    }
+  
+  
+    .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 120px 120px 120px;
+      grid-template-areas:
+      "....... header header"
+      "sidebar content content"
+      "footer  footer  footer";
+      background-color: #fff;
+      color: #444;
+    }
+  
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+  }
+  
+  .header,
+  .footer {
+    background-color: #999;
+  }
