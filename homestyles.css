@@ -9,7 +9,9 @@
 body{
   background-color: var(--main-background-color,white);
 }
-
+a:link{
+  text-decoration: none;
+}
 #about-me {
   grid-area: content;
   color: var(--main-text-color,white);
