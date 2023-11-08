@@ -24,7 +24,7 @@
     grid-area: sidebar;
 }
 
-.class{
+.content{
     grid-area:content;
 }
 
