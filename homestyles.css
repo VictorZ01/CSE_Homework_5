@@ -1,33 +1,28 @@
-.topnav {
-    background-color: #333;
-    grid-area:top;
+#nav{
+    grid-area: sidebar1;
   }
   
-  .topnav a {
-    color: white;
-    font-size: 2vw;
-    text-decoration: none;
-    padding: 1vw;
-  }
-  
-  .topnav a:hover {
-    background-color: #72CFD6;
-  }
-  
-  .topnav a.active {
-    background-color: rgb(99, 124, 206);
-  }
-  
-  .links {
-    grid-area: sidebar;
-  }
-  
-  #About_Me {
+  #about-me {
     grid-area: content;
   }
   
-  #Me {
+  #me {
     grid-area: picture;
+  }
+  #head{
+    grid-area: header;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "picture"
+     "sidebar1"
+     "content"
+     "sidebar2"
+     "footer"
   }
   
   @media only screen and (max-width: 480px) {
@@ -35,7 +30,7 @@
       display: grid;
       grid-gap: 20px;
       grid-template-areas:
-        
+        "header"
         "sidebar"
         "picture"
         "content";

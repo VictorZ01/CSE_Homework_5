@@ -18,19 +18,33 @@
         console.log("This is a place holder for a thrid party script")
     </script>
 </head>
-
-<nav class="topnav">
-    <a href="index.html" class="active">About Me</a>
-    <a href="experience.html">Portfolio</a>
-    <a href="experiment.html">Experiment</a>
-</nav>
+<div class="wrapper">
+<header id="head">
+    Victor Zhen's Website
+</header>
 
 <body id="page">
-    <picture id="box me">
+
+    <section id="nav" class="box">
+        <summary>Go to</summary>
+        <nav>
+            <ul>
+                <li>
+                    <a href='/experience'>Experience</a>
+                </li>
+                <li>
+                    <a href='/experiment'>Experiment Tags</a>
+                </li>
+            </ul>
+        </nav>
+        </section>
+
+    <picture id="me" class="box">
         <img src="images/unnamed(1).jpg" width="300" height="300" alt="Me">
     </picture>
+
     <main>
-        <section id="About_Me" class="box content">
+        <section id="about-me" class="box">
             <h2>About Me</h2>
             <p>
                 <b>This is the section about me.</b>I was born in <span class="where">San Francisco</span>. I like ice
@@ -52,7 +66,7 @@
         </section>
 
     </main>
-    <section id="links" class="box links">
+    <section id="links" class="box">
         <h3>Contact</h3>
         <nav>
             <ul>
@@ -65,24 +79,7 @@
             </ul>
         </nav>
     </section>
-    <h2>Einstein Extra credit</h2>
-    <math>
-        <mrow>
-            <mi>E</mi>
-            <mo>=</mo>
-            <mi>m</mi>
-            <msup>
-                <mi>c</mi>
-                <mn>2</mn>
-            </msup>
-        </mrow>
-    </math>
-    <footer>
-        <hr>
-        <p>This is the
-        <footer></footer>
-        </p>
-    </footer>
+    
 </body>
-
+</div>
 </html>
