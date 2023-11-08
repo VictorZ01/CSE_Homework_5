@@ -22,10 +22,12 @@
 
 .links{
     grid-area: sidebar;
+    background-color: #8ca0ff;
 }
 
 #About_Me{
     grid-area:content;
+    background-color: #ffa08c;
 }
 #Me{
     grid-area:picture;
