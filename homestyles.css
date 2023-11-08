@@ -1,69 +1,70 @@
 #nav{
-    grid-area: sidebar1;
-  }
-  
-  #about-me {
-    grid-area: content;
-  }
-  
-  #me {
-    grid-area: picture;
-    width:100%;
-    height: auto;
-    display: block;
-    justify-content: center; 
-    align-items: center;
-    border-radius: 50%;
-    object-fit: contain;
-  }
-  #head{
-    grid-area: header;
-  } 
-  #links{
-    grid-area:sidebar2;
-  }
+  grid-area: sidebar1;
+}
 
+#about-me {
+  grid-area: content;
+}
+
+#me {
+  grid-area: picture;
+  width:600px;
+  height:60%;
+  display: grid;
+  border-radius: 50%;
+  object-fit: contain;
+  place-items:center;
+  overflow:hidden;
+}
+#head{
+  grid-area: header;
+} 
+#links{
+  grid-area:sidebar2;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 1em;
+  justify-content: center; 
+  align-items: center;
+  grid-template-areas:
+   "header"
+   "picture"
+   "sidebar1"
+   "content"
+   "sidebar2"
+}
+
+@media only screen and (min-width: 750px) {
   .wrapper {
-    display: grid;
-    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-     "header"
-     "picture"
-     "sidebar1"
-     "content"
-     "sidebar2"
+    "header   header"
+    "picture  picture"
+    "sidebar1 content"
+    "sidebar2 content";
   }
-  
-  @media only screen and (min-width: 750px) {
-    .wrapper {
-      grid-template-columns: 20% auto;
-      grid-template-areas:
-      "header   header"
-      "picture  picture"
-      "sidebar1 content"
-      "sidebar2 content";
-    }
-  }
-  
-  @media only screen and (min-width: 1200px)   {
-    .wrapper {
-      grid-gap: 20px;
-      grid-template-columns: 20% auto;
-      grid-template-areas:
-      "header  header  header"
-      "picture picture picture "
-      "sidebar1 content content  "
-      "sidebar2 content content  ";
-    }
-  }
+}
 
-  .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 150%; 
-    word-break: break-word;
+@media only screen and (min-width: 1200px)   {
+  .wrapper {
+    grid-gap: 20px;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    "header  header  header"
+    "picture picture picture "
+    "sidebar1 content content  "
+    "sidebar2 content content  ";
   }
-  
- 
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+  word-break: break-word;
+}
+
