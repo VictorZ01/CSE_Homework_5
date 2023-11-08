@@ -8,7 +8,7 @@
   
   #me {
     grid-area: picture;
-    max-width: 100%;
+    width:50%;
     height: auto;
     display: block;
     justify-content: center; 
