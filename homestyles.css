@@ -64,6 +64,9 @@ body{
     "content content"
     "sidebar2 sidebar2";
   }
+  #about-me{
+    grid-column: span 2;
+  }
   #me {
   grid-area: picture;
   width:600px;
