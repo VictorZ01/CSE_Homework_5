@@ -55,7 +55,6 @@
         "top"
         "content sidebar"
         "footer footer";
-      grid-template-columns: 1fr 1fr;
     }
     .links {
       background-color: orange;
@@ -65,7 +64,7 @@
   @media only screen and (min-width: 1200px) {
     #page {
       grid-template-areas:
-        "top"
+        "top top"
         "picture content"
         "sidebar content"
         "footer footer";
