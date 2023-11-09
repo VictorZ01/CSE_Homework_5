@@ -172,7 +172,7 @@ li {
   #me {
     grid-area: picture;
     display: grid;
-    width:400px;
+    width:50%;
     border-radius:12px;
   }
 
