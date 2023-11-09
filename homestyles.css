@@ -63,7 +63,7 @@ details {
 
 details summary {
   cursor: pointer;
-  transition: margin 150ms ease-out;
+  transition: margin 300ms ease-out;
 }
 
 details[open] summary {
@@ -98,6 +98,7 @@ details[open] summary {
 
 #links {
   grid-area: sidebar2;
+  color: color(display-p3 1 0 0.331);
 }
 
 li {
