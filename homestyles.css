@@ -185,7 +185,7 @@ li {
 
 @media (color-gamut: srgb) {
   #links {
-    background: #f4ae8a;
+    color-scheme: dark;
   }
 }
 
