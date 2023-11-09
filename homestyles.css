@@ -28,7 +28,9 @@ details {
   border-radius: 1px;
   overflow: hidden;
 }
-
+a{
+  color:#4e9a06;
+}
 summary {
   padding: 1rem;
   display: block;
