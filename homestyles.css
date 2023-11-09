@@ -61,6 +61,8 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
+
+
 details > ul {
   padding-bottom: 1rem;
   margin-bottom: 0;
@@ -68,6 +70,11 @@ details > ul {
 
 details[open] summary ~ * {
   animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
 }
 
 
