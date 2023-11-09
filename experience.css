@@ -2,3 +2,7 @@
     --main-text-color: #4e9a06;
     --main-background-color: black;
   }
+
+  body{
+    background-color: var(--main-background-color,#333);
+  }
