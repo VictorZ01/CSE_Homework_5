@@ -39,26 +39,29 @@ summary {
 }
 
 summary:before {
+  transform-origin: .2rem 50%;
+  transition: .1s transform ease;
   content: '';
   border-width: .4rem;
   border-style: solid;
+  left: 1rem;
   border-color: transparent transparent transparent #fff;
   position: absolute;
   top: 1.3rem;
-  left: 1rem;
   transform: rotate(0);
-  transform-origin: .2rem 50%;
-  transition: .1s transform ease;
+
 }
 
 details[open] > summary:before {
   transform: rotate(90deg);
 }
 
+details[open] summary {
+  margin-bottom: 10px;
+}
 
 details {
-  background: gainsboro;
- 
+  background: rgb(90, 81, 81);
 }
 
 details summary {
@@ -66,9 +69,6 @@ details summary {
   transition: margin 300ms ease-out;
 }
 
-details[open] summary {
-  margin-bottom: 10px;
-}
 
 #about-me {
   grid-area: content;
