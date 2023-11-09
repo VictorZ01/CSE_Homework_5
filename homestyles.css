@@ -53,28 +53,30 @@ summary:before {
 }
 
 details[open] > summary:before {
-  transform: rotate(90deg);
+  transform: rotate(deg);
 }
-
 
 details summary::-webkit-details-marker {
   display:none;
 }
-
-
 
 details > ul {
   padding-bottom: 1rem;
   margin-bottom: 0;
 }
 
-details[open] summary ~ * {
-  animation: sweep .5s ease-in-out;
+details {
+  background: gainsboro;
+  padding: 10px;
 }
 
-@keyframes sweep {
-  0%    {opacity: 0; margin-left: -10px}
-  100%  {opacity: 1; margin-left: 0px}
+details summary {
+  cursor: pointer;
+  transition: margin 400ms ease-out;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
 }
 
 
