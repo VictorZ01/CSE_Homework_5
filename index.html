@@ -7,7 +7,7 @@
     <meta property="Description" content="Einstein's famouse equation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victor Zhen's Website</title>
-    <link as="image" href="/images/icons8-tank-16.ico" rel="preload">
+    <link rel="preload" as="image" href="/images/icons8-tank-16.ico" rel="icon">
     <link rel="stylesheet" type="text/css" href="/homestyles.css">
     <style>
         h1 {
@@ -18,22 +18,26 @@
         console.log("This is a place holder for a thrid party script")
     </script>
 </head>
-<div id="wrapper">
-<body>
-    
+<div class="wrapper">
     <header id="head">
         Victor Zhen's Website
     </header>
+
+    <body id="page">
+
+        
         <section id="nav" role="navigation" class="box">
             <nav>
                 <details>
                     <summary id="menu">Home</summary>
-                <ul>
-                    <li><a href='/experience' color="blue">Portfolio</a></li>
-                    <li><a href='/experiment'  color="blue">Experiment</a></li>
+          
+                <ul id="menu">
+                    <a href='/experience' ><li color="blue">Portfolio</li></a>
+                    <a href='/experiment'><li color="blue">Experiment</li></a>
                 </ul>
-            </details>
+    
             </nav>
+        </details>
         </section>
 
         <picture id="me" class="box">
@@ -78,8 +82,8 @@
                 </ul>
             </nav>
         </section>
+
     </body>
-    </div>
-    
+</div>
 
 </html>
