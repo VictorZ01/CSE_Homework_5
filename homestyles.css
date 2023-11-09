@@ -90,6 +90,10 @@ details[open] summary {
   transform: translateY(-50%);
 }
 
+section:has( +h2){
+  background-color: #444;
+}
+
 #head {
   grid-area: top;
   font-size: 3rem;
