@@ -19,6 +19,9 @@ a:link {
   color:aqua;
 }
 
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
 
 
 #about-me {
