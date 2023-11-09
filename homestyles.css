@@ -5,6 +5,7 @@
 
 #nav {
   grid-area: sidebar1;
+  border-radius:50px 50px;
 }
 
 body {
@@ -51,7 +52,6 @@ summary:before {
   transition: .25s transform ease;
 }
 
-/* THE MAGIC 🧙‍♀️ */
 details[open] > summary:before {
   transform: rotate(90deg);
 }
@@ -64,6 +64,10 @@ details summary::-webkit-details-marker {
 details > ul {
   padding-bottom: 1rem;
   margin-bottom: 0;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
 }
 
 
