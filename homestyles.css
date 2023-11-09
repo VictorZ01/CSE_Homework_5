@@ -90,7 +90,7 @@ li{
 @media only screen and (min-width: 1200px)   {
   .wrapper {
     grid-gap: 20px;
-    grid-template-columns: 20% auto;
+    grid-template-columns: auto autop auto ;
     grid-template-areas:
     "header  sidebar1 sidebar1"
     "picture picture picture "
