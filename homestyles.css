@@ -98,7 +98,8 @@ details[open] summary {
 
 #links {
   grid-area: sidebar2;
-  color: color(display-p3 1 0 0.331);
+  color: color-mix(color(display-p3 1 0 0.331),var(--main-text-color));
+
 }
 
 li {
@@ -183,10 +184,6 @@ li {
   word-break: break-word;
 }
 
-@media (color-gamut: srgb) {
-  #links {
-    color-scheme: dark;
-  }
-}
+
 
 
