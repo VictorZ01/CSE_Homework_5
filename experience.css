@@ -8,3 +8,52 @@ body >{
     color:var(--main-background-color,red);
   }
 
+  details {
+    width: 80%;
+    margin: 0 auto ;
+    background: #282828;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+    overflow: hidden;
+  }
+  
+  summary {
+    padding: 1rem;
+    display: block;
+    background:#333;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  summary:before {
+    transform-origin: .2rem 50%;
+    transition: .1s transform ease;
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    left: 1rem;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1.3rem;
+    transform: rotate(0);
+  
+  }
+  
+  details[open] > summary:before {
+    transform: rotate(90deg);
+  }
+  
+  details[open] summary {
+    margin-bottom: 10px;
+  }
+  
+  details {
+    background: rgb(90, 81, 81);
+  }
+  
+  details summary {
+    cursor: pointer;
+    transition: margin 300ms ease-out;
+  }
+  
