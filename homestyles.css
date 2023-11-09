@@ -52,9 +52,11 @@ summary:before {
   transition: .25s transform ease;
 }
 
+/* THE MAGIC 🧙‍♀️ */
 details[open] > summary:before {
-  transform: rotate(deg);
+  transform: rotate(90deg);
 }
+
 
 details summary::-webkit-details-marker {
   display:none;
@@ -65,20 +67,14 @@ details > ul {
   margin-bottom: 0;
 }
 
-details {
-  background: gainsboro;
-  padding: 10px;
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
 }
 
-details summary {
-  cursor: pointer;
-  transition: margin 400ms ease-out;
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-10px)}
+  100%  {opacity: 1; transform: translateX(0)}
 }
-
-details[open] summary {
-  margin-bottom: 10px;
-}
-
 
 #about-me {
   grid-area: content;
