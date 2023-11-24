@@ -109,6 +109,12 @@ section:has( +h2){
 
 }
 
+#form {
+  grid-area: form;
+  color: color-mix(color(display-p3 1 0 0.331),var(--main-text-color));
+
+}
+
 li {
   list-style: none;
   text-decoration: none;
@@ -166,9 +172,8 @@ li {
     grid-template-areas:
     "sidebar1 top"
     "content picture"
-    "sidebar2 sidebar2"
+    "sidebar2 form"
   }
-
   #me {
     grid-area: picture;
     display: grid;
