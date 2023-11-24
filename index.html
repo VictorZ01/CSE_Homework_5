@@ -88,17 +88,17 @@
         <section id="form" class="box">
             <form id="contact" action="https://httpbin.org/post" method="POST">
                 <label for="name">Name:<span class="required">*</span></label><br>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required><br>
 
                 <label for="email">Email: <span class="required">*</span></label><br>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required><br>
             
                 <label for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments"></textarea>
+                <textarea id="comments" name="comments"></textarea><br>
             
-                <input type="hidden" name="possible_bot" value="true">
+                <input type="hidden" name="possible_bot" value="true"><br>
             
-                <button type="submit">Submit</button>
+                <button type="submit">Submit</button><br>
             </form>
             <output id="errorOutput"></output><br>
             <output id="infoOutput"></output>
