@@ -1,6 +1,6 @@
 const email = document.getElementById("email");
 var flash = document.querySelector('.flash');
-
+const array= new Array();
 email.addEventListener("input", (event) => {
   if (email.validity.typeMismatch) {
     email.setCustomValidity("Please Enter a valid email address");
@@ -18,6 +18,7 @@ const filter=(event,regex_name)=>{
     event.preventDefault();
     flash.classList.add('flash-is-showing');
     document.getElementById('errorOutput').textContent = 'Illegal character entered';
+    array.push("Illegal Character");
   }
 };
 
@@ -38,9 +39,14 @@ document.getElementById('comments').addEventListener('input',function(){
     else{
         document.getElementById('comments').style.color="black";
     }
+    if (remaining==0){
+        array.push("0 chacters left");
+    }
     document.getElementById('infoOutput').textContent=`Characters remaining:${remaining}`;
 });
 
+const formErrorsJSON = JSON.stringify(formErrors);
+document.getElementById('errors').value=formErrorsJSON;
 const names = document.getElementById("name");
 
 names.addEventListener('keypress',inputEvent);
