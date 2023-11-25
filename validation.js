@@ -30,9 +30,15 @@ const inputEvent = (event) => {
 
 document.getElementById('comments').addEventListener('input',function(){
     const max=20;
-    const current=this.value.length;
+    const current=document.getElementById('comments').value.length;
     const remaining=20-current;
-    document.getElementById('infoOutput').textContent='Characters remaining:${remaining}';
+    if (remaining<5){
+        document.getElementById('comments').style.borderColor="red";
+    }
+    else{
+        document.getElementById('comments').style.borderColor="black";
+    }
+    document.getElementById('infoOutput').textContent=`Characters remaining:${remaining}`;
 });
 
 const names = document.getElementById("name");
