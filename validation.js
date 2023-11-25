@@ -17,6 +17,7 @@ const filter=(event,regex_name)=>{
   if (!regex_name.test(symbol)) {
     event.preventDefault();
     flash.classList.add('flash-is-showing');
+    document.getElementById('errorOutput').textContent = 'Illegal character entered';
   }
 };
 
