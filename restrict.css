@@ -1,0 +1,36 @@
+
+ form {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  input:required:invalid, textarea:required:invalid {
+    border-color: red;
+  }
+
+  input:optional{
+    border-color:green;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .required {
+    color: red;
+  }
+ 
