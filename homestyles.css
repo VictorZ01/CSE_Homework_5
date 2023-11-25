@@ -191,9 +191,8 @@ li {
 
 .box {
   background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
+  color: red;
+
   font-size: 150%;
   word-break: break-word;
 }
@@ -219,7 +218,8 @@ li {
 @keyframes popup {
   0% { transform: translateY(100%); }
   10% { transform: translateY(0); }
-
+  50% { transform: translateY(0); }
+  99% { transform: translateY(100%); }
 }
 
 
