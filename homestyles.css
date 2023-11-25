@@ -215,7 +215,7 @@ li {
 }
 
 .flash-is-showing {
-  animation: popup 4s ;
+  animation: popup 5s ;
 }
 
 @keyframes popup {
