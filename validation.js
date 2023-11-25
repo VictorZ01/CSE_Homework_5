@@ -45,7 +45,7 @@ document.getElementById('comments').addEventListener('input',function(){
     document.getElementById('infoOutput').textContent=`Characters remaining:${remaining}`;
 });
 
-const formErrorsJSON = JSON.stringify(formErrors);
+const formErrorsJSON = JSON.stringify(array);
 document.getElementById('errors').value=formErrorsJSON;
 const names = document.getElementById("name");
 
