@@ -19,7 +19,9 @@ const filter=(event,regex_name)=>{
     flash.classList.add('flash-is-showing');
   }
 };
-
+flash.addEventListener('animationend', function(){
+    flash.classList.remove('flash-is-showing');
+  });
 const inputEvent = (event) => {
     filter(event, regex_name);
   };
