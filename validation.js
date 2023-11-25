@@ -1,6 +1,6 @@
 const email = document.getElementById("email");
 var flash = document.querySelector('.flash');
-const array= new Array();
+const array= [];
 email.addEventListener("input", (event) => {
   if (email.validity.typeMismatch) {
     email.setCustomValidity("Please Enter a valid email address");
