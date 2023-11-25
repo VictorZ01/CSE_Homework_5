@@ -27,13 +27,15 @@ flash.addEventListener('animationend', function(){
 const inputEvent = (event) => {
     filter(event, regex_name);
   };
+  const text = document.querySelector("comments");
 
-document.getElementById('comments').addEventListener('input',function(){
+  text.addEventListener("input",event=>{
+    const target=event.currentTarget;
     const max=20;
-    const current=this.ariaValueMax.length;
-    const remaining=20-current;
-    document.getElementById('infoOutput').textContent='Characters remaining:${remaining}';
-});
+    const current=target.value.length;
+    const remaining=10-current
+    document.getElementById('infoOutput').textContent=`Characters remaining:${remaining}`;
+  });
 
 const names = document.getElementById("name");
 
