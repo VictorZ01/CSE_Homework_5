@@ -7,8 +7,18 @@ email.addEventListener("input", (event) => {
     email.setCustomValidity("");
   }
 });
+let regex_name= /[A-Za-z]/;
+const filter=(event,regex_name)=>{
+    let symbol = String.fromCharCode(event.keyCode);
+  if (!regEx.test(symbol)) {
+    event.preventDefault();
+  }
+};
 
-document.getElementById('comments').addEventListener("input",function(){
-    const reg=/[^a-zA-Z0-9.,?! ]/g;
-    this.value=this.value.replace(reg,'')
-});
+const inputEvent = (event) => {
+    filter(event, regex);
+  };
+
+const names = document.getElementById("name");
+
+names.addEventListener('keypress',inputEvent);
