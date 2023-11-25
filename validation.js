@@ -28,6 +28,13 @@ const inputEvent = (event) => {
     filter(event, regex_name);
   };
 
+document.getElementById('comments').addEventListener('input',function(){
+    const max=20;
+    const current=this.ariaValueMax.length;
+    const remaining=20-current;
+    document.getElementById('infoOutput').textContent='Characters remaining:${remaining}';
+});
+
 const names = document.getElementById("name");
 
 names.addEventListener('keypress',inputEvent);
