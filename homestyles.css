@@ -192,22 +192,17 @@ li {
 .box {
   background-color: #444;
   color: red;
-
+  border-radius: 5px;
+  padding: 10px;
   font-size: 150%;
   word-break: break-word;
 }
 
 .flash {
   position: fixed;
-  bottom: 0;
-  left: 0; 
-  right: 0;
-  padding: 40px;
-  
   background-color: black;
-  color: white;
+  color: red;
   text-align: center;
-  
   transform: translateY(100%);
 }
 
