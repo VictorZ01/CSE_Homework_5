@@ -19,6 +19,9 @@ const filter=(event,regex_name)=>{
     flash.classList.add('flash-is-showing');
     document.getElementById('errorOutput').textContent = 'Illegal character entered';
     array.push("Illegal Character");
+    const formErrorsJSON = JSON.stringify(array);
+    console.log(formErrorsJSON)
+    document.getElementById('errors').setAttribute('value',formErrorsJSON);
   }
 };
 
@@ -41,13 +44,14 @@ document.getElementById('comments').addEventListener('input',function(){
     }
     if (remaining==0){
         array.push("0 characters left");
+        const formErrorsJSON = JSON.stringify(array);
+        console.log(formErrorsJSON)
+        document.getElementById('errors').setAttribute('value',formErrorsJSON);
     }
     document.getElementById('infoOutput').textContent=`Characters remaining:${remaining}`;
 });
 
-const formErrorsJSON = JSON.stringify(array);
-console.log(formErrorsJSON)
-document.getElementById('errors').setAttribute('value',formErrorsJSON);
+
 const names = document.getElementById("name");
 
 names.addEventListener('keypress',inputEvent);
