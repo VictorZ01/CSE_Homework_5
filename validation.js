@@ -40,7 +40,7 @@ document.getElementById('comments').addEventListener('input',function(){
         document.getElementById('comments').style.color="black";
     }
     if (remaining==0){
-        array.push("0 chacters left");
+        array.push("0 characters left");
     }
     document.getElementById('infoOutput').textContent=`Characters remaining:${remaining}`;
 });
