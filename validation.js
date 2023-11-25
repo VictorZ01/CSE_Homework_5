@@ -19,7 +19,6 @@ const filter=(event,regex_name)=>{
     flash.classList.add('flash-is-showing');
     document.getElementById('errorOutput').textContent = 'Illegal character entered';
     array.push("Illegal Character");
-    console.log(array);
   }
 };
 
@@ -47,6 +46,7 @@ document.getElementById('comments').addEventListener('input',function(){
 });
 
 const formErrorsJSON = JSON.stringify(array);
+console.log(formErrorsJSON)
 document.getElementById('errors').setAttribute('value',formErrorsJSON);
 const names = document.getElementById("name");
 
