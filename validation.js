@@ -19,6 +19,7 @@ const filter=(event,regex_name)=>{
     flash.classList.add('flash-is-showing');
     document.getElementById('errorOutput').textContent = 'Illegal character entered';
     array.push("Illegal Character");
+    console.log(array);
   }
 };
 
