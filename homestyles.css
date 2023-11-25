@@ -133,6 +133,7 @@ li {
     "picture"
     "content"
     "sidebar2"
+    "form"
 }
 
 @media only screen and (min-width: 750px) {
@@ -142,7 +143,7 @@ li {
       "top sidebar1"
       ". picture"
       ". content"
-      "sidebar2 sidebar2";
+      "sidebar2 form";
   }
 
   #about-me {
