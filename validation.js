@@ -1,4 +1,4 @@
-const email = document.getElementById("mail");
+const email = document.getElementById("email");
 
 email.addEventListener("input", (event) => {
   if (email.validity.typeMismatch) {
