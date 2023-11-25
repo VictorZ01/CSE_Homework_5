@@ -10,13 +10,13 @@ email.addEventListener("input", (event) => {
 let regex_name= /[A-Za-z]/;
 const filter=(event,regex_name)=>{
     let symbol = String.fromCharCode(event.keyCode);
-  if (!regEx.test(symbol)) {
+  if (!regex_name.test(symbol)) {
     event.preventDefault();
   }
 };
 
 const inputEvent = (event) => {
-    filter(event, regex);
+    filter(event, regex_name);
   };
 
 const names = document.getElementById("name");
