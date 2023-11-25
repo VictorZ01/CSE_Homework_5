@@ -33,10 +33,10 @@ document.getElementById('comments').addEventListener('input',function(){
     const current=document.getElementById('comments').value.length;
     const remaining=20-current;
     if (remaining<5){
-        document.getElementById('comments').style.borderColor="red";
+        document.getElementById('comments').style.color="red";
     }
     else{
-        document.getElementById('comments').style.borderColor="black";
+        document.getElementById('comments').style.color="black";
     }
     document.getElementById('infoOutput').textContent=`Characters remaining:${remaining}`;
 });
