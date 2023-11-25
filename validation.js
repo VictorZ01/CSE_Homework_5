@@ -29,9 +29,9 @@ const inputEvent = (event) => {
   };
 
 document.getElementById('comments').addEventListener('input',function(){
-    const max=20;
+    const max=document.getElementById('comments').maxLength;
     const current=document.getElementById('comments').value.length;
-    const remaining=20-current;
+    const remaining=max-current;
     if (remaining<5){
         document.getElementById('comments').style.color="red";
     }
