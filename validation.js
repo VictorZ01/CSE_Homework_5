@@ -46,7 +46,7 @@ document.getElementById('comments').addEventListener('input',function(){
 });
 
 const formErrorsJSON = JSON.stringify(array);
-document.getElementById('errors').value=formErrorsJSON;
+document.getElementById('errors').setAttribute('value',formErrorsJSON);
 const names = document.getElementById("name");
 
 names.addEventListener('keypress',inputEvent);
