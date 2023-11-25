@@ -27,7 +27,7 @@ flash.addEventListener('animationend', function(){
 const inputEvent = (event) => {
     filter(event, regex_name);
   };
-  const text = document.querySelector("comments");
+  const text = document.getElementById("comments");
 
   text.addEventListener("input",event=>{
     const target=event.currentTarget;
