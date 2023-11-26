@@ -16,7 +16,7 @@ const filter=(event,regex_name)=>{
     let symbol = String.fromCharCode(event.keyCode);
   if (!regex_name.test(symbol)) {
     event.preventDefault();
-    flash.classList.add('flash-is-showing');
+    flash.classList.add('pop');
     document.getElementById('errorOutput').textContent = 'Illegal character entered';
     array.push("Illegal Character");
     const formErrorsJSON = JSON.stringify(array);
@@ -26,7 +26,7 @@ const filter=(event,regex_name)=>{
 };
 
 flash.addEventListener('animationend', function(){
-    flash.classList.remove('flash-is-showing');
+    flash.classList.remove('pop');
   });
 const inputEvent = (event) => {
     filter(event, regex_name);

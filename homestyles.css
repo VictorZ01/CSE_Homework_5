@@ -199,6 +199,17 @@ li {
   word-break: break-word;
 }
 
+.slider {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .flash {
   position: fixed;
 
@@ -215,7 +226,7 @@ li {
   transform: translateY(100%);
 }
 
-.flash-is-showing {
+.pop {
   animation: popup 5s ;
 }
 
@@ -251,17 +262,6 @@ li {
   height: 0;
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
 
 .slider:before {
   position: absolute;
@@ -285,9 +285,6 @@ input:checked + .slider {
   background-color: black ;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px black;
-}
 
 input:checked + .slider:before {
   -webkit-transform: translateX(40px);
