@@ -113,14 +113,10 @@
 
 
     <div class="container">
-        <label class="toggle_label">
-          <input type="checkbox" id="mode" class="toggle">
-          <span class="slider round">
-            <i class="icon">&#9728;</i>
-            <i class="icon">&#9790;</i>
-          </span>
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
         </label>
-        <p id="theme"></p>
     </div>
 
     <script src="validation.js"></script>
