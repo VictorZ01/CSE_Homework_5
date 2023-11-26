@@ -173,7 +173,7 @@ li {
     grid-template-areas:
     "sidebar1 top"
     "content picture"
-    "sidebar2 form"
+    "button form"
   }
   #me {
     grid-area: picture;
@@ -223,6 +223,19 @@ li {
   10% { transform: translateY(0); }
   50% { transform: translateY(0); }
   99% { transform: translateY(100%); }
+}
+
+.theme{
+  cursor:pointer;
+  grid-area: button;
+}
+
+#light {
+  color: yellow; /* Gold color for light mode */
+}
+
+#dark {
+  color: white; /* Dim gray color for dark mode */
 }
 
 

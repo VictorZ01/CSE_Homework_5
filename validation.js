@@ -55,3 +55,16 @@ document.getElementById('comments').addEventListener('input',function(){
 const names = document.getElementById("name");
 
 names.addEventListener('keypress',inputEvent);
+
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+  document.body.classList.add(currentTheme);
+}
+
+
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+  const theme = body.classList.contains('dark-mode') ? 'dark-mode' : '';
+  localStorage.setItem('theme', theme);
+}
