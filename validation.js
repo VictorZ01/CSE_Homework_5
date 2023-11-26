@@ -57,8 +57,8 @@ const names = document.getElementById("name");
 names.addEventListener('keypress',inputEvent);
 
 function setTheme(theme) {
-    localStorage.setItem('theme', themeName);
-    document.documentElement.className = themeName;
+    localStorage.setItem('theme', theme);
+    document.documentElement.className = theme;
 };
 
 function toggleTheme() {
