@@ -226,15 +226,6 @@ li {
   99% { transform: translateY(100%); }
 }
 
-.light{
-  background-color: white;
-  --main-background-color:white;
-}
-
-.dark{
-  background-color: black;
-  --main-background-color:black:
-}
 
 .container {
   display: flex;
