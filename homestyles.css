@@ -190,6 +190,43 @@ li {
   }
 }
 
+
+.box {
+  background-color: #444;
+  color: red;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+  word-break: break-word;
+}
+
+.flash {
+  position: fixed;
+
+  left: 0; 
+
+  padding: 40px;
+  background-color: black;
+  color: red;
+
+  bottom: 0;
+  text-align: center;
+  right: 0;
+
+  transform: translateY(100%);
+}
+
+.flash-is-showing {
+  animation: popup 5s ;
+}
+
+@keyframes popup {
+  0% { transform: translateY(100%); }
+  10% { transform: translateY(0); }
+  50% { transform: translateY(0); }
+  99% { transform: translateY(100%); }
+}
+
 .toggle {
   background-color: #607d8b;
   color: #607d8b;
@@ -229,58 +266,5 @@ li {
   transition: .4s;
   border-radius: 50%;
 }
-
-.box {
-  background-color: #444;
-  color: red;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 150%;
-  word-break: break-word;
-}
-
-.flash {
-  position: fixed;
-
-  left: 0; 
-
-  padding: 40px;
-  background-color: black;
-  color: red;
-
-  bottom: 0;
-  text-align: center;
-  right: 0;
-
-  transform: translateY(100%);
-}
-
-.flash-is-showing {
-  animation: popup 5s ;
-}
-
-@keyframes popup {
-  0% { transform: translateY(100%); }
-  10% { transform: translateY(0); }
-  50% { transform: translateY(0); }
-  99% { transform: translateY(100%); }
-}
-
-.theme{
-  cursor:pointer;
-  grid-area: button;
-  top:20px;
-  right:20px;
-}
-
-#light {
-  color: yellow; /* Gold color for light mode */
-}
-
-#dark {
-  color: white; /* Dim gray color for dark mode */
-}
-
-
 
 
