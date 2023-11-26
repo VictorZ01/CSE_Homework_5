@@ -228,6 +228,8 @@ li {
 .theme{
   cursor:pointer;
   grid-area: button;
+  top:20px;
+  right:20px;
 }
 
 #light {
