@@ -199,17 +199,6 @@ li {
   word-break: break-word;
 }
 
-.slider {
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
 .flash {
   position: fixed;
 
@@ -262,6 +251,16 @@ li {
   height: 0;
 }
 
+.slider {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 
 .slider:before {
   position: absolute;
