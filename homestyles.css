@@ -173,7 +173,8 @@ li {
     grid-template-areas:
     "sidebar1 top"
     "content picture"
-    "button form"
+    "sidebar2 form"
+    "button"
   }
   #me {
     grid-area: picture;
