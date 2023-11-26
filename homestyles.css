@@ -229,10 +229,12 @@ li {
 
 .light{
   background-color: white;
+  --main-background-color:white;
 }
 
 .dark{
   background-color: black;
+  --main-background-color:black:
 }
 
 .container {
