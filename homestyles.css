@@ -285,6 +285,9 @@ input:checked + .slider {
   background-color: black ;
 }
 
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
 
 input:checked + .slider:before {
   -webkit-transform: translateX(40px);
