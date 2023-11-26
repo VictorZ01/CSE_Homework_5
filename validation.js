@@ -63,18 +63,18 @@ function setTheme(theme) {
 
 function toggleTheme() {
     if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-light');
+        setTheme('light');
     } else {
-        setTheme('theme-dark');
+        setTheme('dark');
     }
 };
 
 (function () {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-dark');
+    if (localStorage.getItem('theme') === 'dark') {
+        setTheme('dark');
         document.getElementById('slider').checked = false;
     } else {
-        setTheme('theme-light');
+        setTheme('light');
       document.getElementById('slider').checked = true;
     }
 })();
