@@ -62,7 +62,13 @@ function setTheme(theme) {
 };
 
 function toggleTheme() {
-   console.log("Changed");
+    if (localStorage.getItem('theme') === 'dark') {
+        setTheme('theme-light');
+        document.getElementById("page").style.backgroundColor="white";
+    } else {
+        setTheme('theme-dark');
+        document.getElementById("page").style.backgroundColor="black";
+    }
 };
 
 (function () {
