@@ -72,9 +72,11 @@ function toggleTheme() {
 (function () {
     if (localStorage.getItem('theme') === 'dark') {
         setTheme('dark');
+        document.getElementById("body").style.background=black;
         document.getElementById('slider').checked = false;
     } else {
         setTheme('light');
+        document.getElementById("body").style.background=white;
       document.getElementById('slider').checked = true;
     }
 })();
