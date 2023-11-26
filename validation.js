@@ -62,22 +62,22 @@ function setTheme(theme) {
 };
 
 function toggleTheme() {
-    if (localStorage.getItem('theme') === 'dark') {
-        setTheme('theme-light');
+    if (localStorage.getItem('theme') === 'white') {
+        localStorage.setItem('theme', 'light');
         document.getElementById("page").style.backgroundColor="white";
     } else {
-        setTheme('theme-dark');
+        localStorage.setItem('theme', 'dark');
         document.getElementById("page").style.backgroundColor="black";
     }
 };
 
 (function () {
     if (localStorage.getItem('theme') === 'dark') {
-        setTheme('dark');
+   
         document.getElementById("page").style.backgroundColor="black";
         document.getElementById('slider').checked = false;
     } else {
-        setTheme('light');
+      
         document.getElementById("page").style.backgroundColor="white";
       document.getElementById('slider').checked = true;
     }
