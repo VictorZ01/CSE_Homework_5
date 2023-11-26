@@ -64,21 +64,21 @@ function setTheme(theme) {
 function toggleTheme() {
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('light');
-        document.getElementById("page").style.background=white;
+        document.getElementById("page").style.backgroundColor="white";
     } else {
         setTheme('dark');
-        document.getElementById("page").style.background=black;
+        document.getElementById("page").style.backgroundColor="black";
     }
 };
 
 (function () {
     if (localStorage.getItem('theme') === 'dark') {
         setTheme('dark');
-        document.getElementById("page").style.background=black;
+        document.getElementById("page").style.backgroundColor="black";
         document.getElementById('slider').checked = false;
     } else {
         setTheme('light');
-        document.getElementById("page").style.background=white;
+        document.getElementById("page").style.backgroundColor="white";
       document.getElementById('slider').checked = true;
     }
 })();
