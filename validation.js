@@ -56,10 +56,6 @@ const names = document.getElementById("name");
 
 names.addEventListener('keypress',inputEvent);
 
-function setTheme(theme) {
-    localStorage.setItem('theme', theme);
-    document.documentElement.className = theme;
-};
 
 function toggle() {
     if (localStorage.getItem('theme') === 'dark') {
