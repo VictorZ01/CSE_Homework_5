@@ -269,15 +269,11 @@ li {
   width: 40px;
   left: 0px;
   bottom: 4px;
-  top: 0;
-  bottom: 0;
   margin: auto 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 0 0px 15px black;
   background: white;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 input:checked + .slider {
