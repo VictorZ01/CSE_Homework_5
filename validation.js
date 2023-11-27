@@ -61,7 +61,7 @@ function setTheme(theme) {
     document.documentElement.className = theme;
 };
 
-function toggleTheme() {
+function toggle() {
     if (localStorage.getItem('theme') === 'dark') {
         localStorage.setItem('theme', 'light');
         document.getElementById("page").style.backgroundColor="white";
