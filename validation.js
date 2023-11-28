@@ -1,5 +1,5 @@
 const email = document.getElementById("email");
-var flash = document.querySelector('.flash');
+var flash = document.querySelector('.message');
 const array= [];
 email.addEventListener("input", (event) => {
   if (email.validity.typeMismatch) {

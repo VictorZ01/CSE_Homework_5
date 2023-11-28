@@ -199,7 +199,7 @@ li {
   word-break: break-word;
 }
 
-.flash {
+.message{
   position: fixed;
 
   left: 0; 
