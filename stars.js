@@ -35,7 +35,7 @@ function submit(number){
         document.getElementById('message').textContent=`Thank you for the ${number} rating!`
     }
     else{
-        document.getElementById('message').textContent=`Thank you for the feedback of ${number}. We will try our best next time!`
+        document.getElementById('message').textContent=`Thank you for the feedback of ${number}. We will try our best next time`
     }  
     console.log(request);
     
