@@ -30,8 +30,21 @@ function display(data){
    const windSpeed=data.windSpeed;
    const windDir=data.windDirection;
    const iconUrl = data.icon;
+   let icon="";
+   if(condition=="Clear"){
+    icon="118959_clear_weather_icon.png"
+   }
+   else if(condition=="Cloudy"){
+    icon="1530369_weather_cloud_clouds_cloudy_icon.png"
+   }
+   else if(condition=="Partly-Cloudy"){
+    icon="2682849_cloud_cloudy_day_forecast_sun_icon.png"
+   }
+   else{
+    icon="118959_clear_weather_icon.png"
+   }
    weatherWidget.innerHTML=`
-   <img src="${iconUrl}" alt="Weather Icon" id="weather_icon" width="50">
+   <img src="${icon}" alt="Weather Icon" id="weather_icon" width="50">
    <p>${condition} ${temp}°F</p>
    <p>${windSpeed} ${windDir}</p>`;
 }
