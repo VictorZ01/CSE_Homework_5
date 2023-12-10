@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rating widget</title>
+    <script defer src="stars.js"></script>
+    <link rel="stylesheet" href="star_color.css">
+
+</head>
+<body>
+    <h2>Rating</h2>
+    
+    <div id="rating-widget">
+        <form id="rating-form" action="https://httpbin.org/post" method="POST">
+            <label for="rating">How satisfied are you?</label>
+            <input type="hidden" name="question" value="How satisfied are you?">
+            <input type="hidden" name="sendBy" value="HTML">
+            <input type="number" id="rating" name="rating" min="1"
+            max="5" value="0" required>
+            <button type="submit"> submit</button>
+        </form>
+    </rating-widget>
+        <div id="rating-stars">
+        <p id="message"></p>
+        </div>
+    
+</body>
+</html>
+
